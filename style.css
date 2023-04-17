@@ -143,3 +143,21 @@
     cursor: pointer;
 }
 .titu{text-align: center;}
+
+.tabla{width:100%;
+    display: block;
+    margin: 0;}
+
+.nosotro{margin: auto auto;}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;}
+
+.code-container {
+margin: 40px auto; /* ajusta el margen superior e inferior */
+max-height: calc(90vh - 250px); /* establece una altura máxima */
+overflow-y: auto; 
+      }
