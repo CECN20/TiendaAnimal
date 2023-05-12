@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="stylecontacto.css">
 </head>
 <style>
@@ -22,129 +20,45 @@
         color: black;
     }
 </style>
-
-
 <body>
-<header>
-    <div id="primera-barra" class="container-fluid ">
-        <div class="row">
-            <div class="col-sm-8">
-                <img src="img/brit.png" alt="brit">
-                <img src="img/acana.png" alt="acana">
-                <img src="img/granplus1.png" alt="granplus">
-                <img src="img/biljac.png" alt="biljac">
-                <img src="img/royalcanin.png" alt="royalcanin">
-                <img src="img/nutragold.png" alt="nutragold">
-                <img src="img/biofresh.png" alt="biofresh">
-                <img src="img/vetlife.jpg" alt="vetlife">
-                <img src="img/logo-hill.svg" alt="hill's">
-            </div>
-            <div class="col-sm-4">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="inicioSesion.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="registrarse.html">Registrarme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Ayuda</a>
-                    </li>
-                </ul>
-            </div>
+<h1 class="titulo_form">Formulario de Contacto</h1>
+<div id="contenedor_form">
+    <h3 class="Subtitulo_form">Contacto</h3>
+    <div id="form_contacto">
+        <div id="seccion_datos">
+            <p>
+                Tel
+            </p>
+            <p>
+                Ciudad
+            </p>
+            <p>
+                Link
+            </p>
         </div>
-    </div>
-    <div id="navegador" class="navbar navbar-expand-sm  justify-content-center">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="index.html">
-                <img src="img/petslife-logo.svg" alt="pagina Logo1">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-start" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comida</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Perro</a></li>
-                            <li><a class="dropdown-item" href="#">Gato</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Tienda.html">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Donaciones.html">Donaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="img/usuario.jpg" alt="usuario" style="height: 20px; width: 20px;  "
-                                 class="rounded-pill">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Francisco Eljuri</a>
-                    </li>
-                </ul>
-            </div>
-            <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder=" ">
-                <button class="btn btn-secondary" type="button">Buscar</button>
-            </form>
-        </div>
-    </div>
-</header>
-
-<h1 id="tituloContacto">Contáctanos</h1>
-<br>
-
-<div class="container">
-    <div class="formularioContacto col-sm-6">
-        <form>
-            <h3 id="formulariotexto">Formulario de Contacto</h3>
-            <p>Envíanos un mensaje y te responderemos lo antes posible</p>
-            <div class="col-sm-12">
-                <label for="correoinput" class="form-label">Correo</label>
+        <div id="seccion_campos">
+            <div>
+                <label form="correoinput" class="form-label">Correo</label>
                 <input type="email" class="form-control" id="correoinput" placeholder="micorreo@ejemplo.com">
             </div>
-            <div class="col-sm-12">
-                <label for="nombreinput" class="form-label">Nombre</label>
+            <div>
+                <label form="nombreinput" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombreinput" placeholder="Nombre y Apellido">
             </div>
-            <div class="col-sm-12">
-                <label for="telefonoinput" class="form-label">Teléfono</label>
+            <div>
+                <label form="telefonoinput" class="form-label">Teléfono</label>
                 <input type="tel" class="form-control" id="telefonoinput" placeholder="+569">
             </div>
-            <div class="col-sm-12">
-                <label for="mensajeinput" class="form-label">Mensaje</label>
-                <input type="text" class="form-control" id="mensajeinput">
+            <div>
+                <label form="mensajeinput" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensajeinput" cols="10" rows="5"></textarea>
             </div>
-            <br>
-            <button>Enviar</button>
-
-
-        </form>
-    </div>
-    <div class="texto col-sm-6">
-        <h3 id="infoContacto">Información de Contacto</h3> <br>
-        <p>detoducireto@gmail.com</p>
-        <p>+56 9 4567 6783</p>
-        <p>Novena, San Miguel, Chile</p><br>
-        <img src="img/mapa.jpg" alt="Google Maps" width="500" height="auto">
+            <button id="btn_enviar">Enviar</button>
+        </div>
     </div>
 </div>
-</div>
+    
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"

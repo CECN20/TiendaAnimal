@@ -1,51 +1,51 @@
-
-.page-header {
-
-    text-align: center;
-
-}
-
-#mensajeinput {
-    height: 150px;
-
-}
-
-#tituloContacto {
+.titulo_form{
     text-align: center;
 }
 
-#formulariotexto {
-    text-align: left;
+.Subtitulo_form{
+    margin: 3rem auto;
+    text-align: center;
 }
 
-.formularioContacto {
-    float: left;
-
+#contenedor_form{
+    border: 2px solid black;
+    margin: 2rem 3rem;
+    padding-bottom: 3rem;
 }
 
-.texto {
-    float: right;
+#contenedor_form #form_contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
 }
 
-#infoContacto {
-    text-align: left;
+#form_contacto #seccion_datos{
+    display: grid;
+    justify-content: center;
+    width: 100%;
 }
 
-button {
-    background-color: gray;
-    color: white;
-    font-size: 1.2em;
+#form_contacto #seccion_campos{
+    display: grid;
+    width: 90%;
+}
+
+#form_contacto #seccion_campos #btn_enviar{
+    background-color: rgb(26, 72, 131);
     border: none;
-    border-radius: 10px;
+    width: 60%;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 3rem;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-p {
-    line-height: 0.5;
-}
-
-
-#mascotas1 {
-    width: auto;
-    height: auto;
+#form_contacto #seccion_campos #btn_enviar:hover {
+    background-color: rgb(58, 98, 172);
 }
