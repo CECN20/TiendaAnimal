@@ -24,3 +24,6 @@ function cargarHTML(pagina){
         xhttp.open("GET",rutaHTML, true);
         xhttp.send();
     }
+
+
+
